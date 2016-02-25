@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Coffee Lounge</title>
+	</head>
+	<style>
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -36px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 50
+  px; 
+}
+.site-footer {
+  background: rgb(142, 55, 0);
+}
+	ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(142, 55, 0);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #FAFAD2;
+}
+body { 
+    background-image: url('bt.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom; 
+}
+div.map {
+margin-left: auto;
+margin-right: auto;
+width: 720px;}
+</style>
+<body>
+<div class="page-wrap">	
+	<div style="text-align: center">
+		<div id="menu">
+
+			<ul style="text-align:center">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="service.html">Video</a></li>
+				<li><a href="contact.html">Contacts</a></li>
+			</ul>	
+		</div>
+			</div>	
+	<strong>
+			<p style="text-align: center; font-size: 60px;font-family: Impact; color: rgb(142, 55, 0)">Coffee Lounge</p>
+		</strong>
+<div class="map">
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'>
+</script>
+<div style='overflow:hidden;height:440px;width:700px;'>
+<div id='gmap_canvas' style='height:440px;width:700px;'>
+</div>
+<div><small>
+<a href="http://embedgooglemaps.com">
+									embed google map</a>
+	</small></div>
+<div><small><a href="http://www.freedirectorysubmissionsites.com/">link directories</a></small></div>
+<style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+</div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(52.2306785,21.00257959999999),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(52.2306785,21.00257959999999)});infowindow = new google.maps.InfoWindow({content:'<strong>Zlote Tarasy</strong><br>Zlota 59 Street  00-120 Warsaw<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+</script>
+</div>
+<p style="text-align:center; font-size: 20px; font-familt: Arial">Adress:</p>
+<p style="text-align:center; font-size: 20px; font-familt: Arial">Zlota 59 Street</p> 
+<p style="text-align:center; font-size: 20px; font-familt: Arial">00-120 Warsaw</p>		
+</div>		
+<footer class="site-footer"; style="text-align:center">
+<p>(c)Daria Shcherbakova</p>
+<p>Contact information: dshcher12@students.lcc.lt</p>
+</footer>			
+			
+		</body>
+</html>	
+		
